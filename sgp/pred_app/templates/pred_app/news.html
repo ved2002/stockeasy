@@ -1,0 +1,24 @@
+{% extends "pred_app/base.html" %}
+{% load static %}
+{% block nav %}
+<li>
+    <a href="index">
+        Home
+    </a>
+</li>
+<li>
+    <a href="pred">
+        Prediction
+    </a>
+</li>
+<li class="active">
+    <a href="news">
+        News
+    </a>
+</li>
+{% endblock nav %}
+{% block content %}
+	<h1 style="color:rgb(0, 0, 0);">Market News</h1><br/>
+	
+	<iframe width="auto" height="1600" src="https://rss.app/embed/v1/magazine/t1ZoMX30xjhJsWqR" frameborder="0"></iframe>
+{% endblock %}

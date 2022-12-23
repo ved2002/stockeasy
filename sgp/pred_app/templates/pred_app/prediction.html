@@ -1,0 +1,52 @@
+{% extends "pred_app/base.html" %}
+{% load static %}
+{% block nav %}
+<li>
+    <a href="index">
+        Home
+    </a>
+</li>
+<li class="active">
+    <a href="pred">
+        Prediction
+    </a>
+</li>
+<li>
+    <a href="news">
+        News
+    </a>
+</li>
+{% comment %} <li>
+    <a href="contact">
+        Contact Us
+    </a>
+</li> {% endcomment %}
+{% endblock nav %}
+{% block content %}
+<div class="content">    
+    <div class="form-group col-sm-6 col-sm-offset-1" cling="center">
+        <h2 align="center">
+            Get Your Predictions !
+        </h2>
+        <form align="left" class="" id="search">
+            <input class="form-control typeahead" data-url2="{% static 'pred_app/data/stock2.json' %}" data-url="{% static 'pred_app/data/stock.json' %}" id="typeahead" placeholder="Search Stock Symbol..." type="text" usr-url=""/>
+        </form>
+    </div>
+    <br>
+        <br>
+            <br>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+                                </br>
+                            </br>
+                        </br>
+                    </br>
+                </br>
+            </br>
+        </br>
+    </br>
+</div>
+{% endblock content %}
